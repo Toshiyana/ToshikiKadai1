@@ -8,28 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet private var numText1: UITextField!
-    @IBOutlet private var numText2: UITextField!
-    @IBOutlet private var numText3: UITextField!
-    @IBOutlet private var numText4: UITextField!
-    @IBOutlet private var numText5: UITextField!
-
-    @IBOutlet private var calcButton: UIButton!
-    @IBOutlet private var clearButton: UIButton!
+    @IBOutlet private var numTextField1: UITextField!
+    @IBOutlet private var numTextField2: UITextField!
+    @IBOutlet private var numTextField3: UITextField!
+    @IBOutlet private var numTextField4: UITextField!
+    @IBOutlet private var numTextField5: UITextField!
 
     @IBOutlet private var resultLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
     @IBAction private func calcButtonPressed() {
-        let num1 = Int(numText1.text!) ?? 0
-        let num2 = Int(numText2.text!) ?? 0
-        let num3 = Int(numText3.text!) ?? 0
-        let num4 = Int(numText4.text!) ?? 0
-        let num5 = Int(numText5.text!) ?? 0
+        let num1 = Int(numTextField1.text!) ?? 0
+        let num2 = Int(numTextField2.text!) ?? 0
+        let num3 = Int(numTextField3.text!) ?? 0
+        let num4 = Int(numTextField4.text!) ?? 0
+        let num5 = Int(numTextField5.text!) ?? 0
 
         let result = num1 + num2 + num3 + num4 + num5
 
@@ -37,10 +29,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func clearButtonPressed() {
-        numText1.text = nil
-        numText2.text = nil
-        numText3.text = nil
-        numText4.text = nil
-        numText5.text = nil
+        numTextField1.text = nil
+        numTextField2.text = nil
+        numTextField3.text = nil
+        numTextField4.text = nil
+        numTextField5.text = nil
+
+        resultLabel.text = "0"
     }
 }

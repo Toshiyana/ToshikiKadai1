@@ -76,13 +76,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calcButton" destination="TEt-td-l8T" id="xKi-cB-977"/>
-                        <outlet property="clearButton" destination="Jyg-RB-ARp" id="Vke-ii-ROa"/>
-                        <outlet property="numText1" destination="CIB-nx-vnE" id="DHk-oE-HHG"/>
-                        <outlet property="numText2" destination="MKr-1s-aFb" id="NOn-gw-atz"/>
-                        <outlet property="numText3" destination="yy0-zO-Xjo" id="80v-ss-Pfx"/>
-                        <outlet property="numText4" destination="Yfy-zd-c7e" id="09N-y8-pOw"/>
-                        <outlet property="numText5" destination="rpJ-Mq-keW" id="KUA-FA-yEs"/>
+                        <outlet property="numTextField1" destination="CIB-nx-vnE" id="DHk-oE-HHG"/>
+                        <outlet property="numTextField2" destination="MKr-1s-aFb" id="NOn-gw-atz"/>
+                        <outlet property="numTextField3" destination="yy0-zO-Xjo" id="80v-ss-Pfx"/>
+                        <outlet property="numTextField4" destination="Yfy-zd-c7e" id="09N-y8-pOw"/>
+                        <outlet property="numTextField5" destination="rpJ-Mq-keW" id="KUA-FA-yEs"/>
                         <outlet property="resultLabel" destination="QTh-JS-4Lh" id="utx-b5-gZL"/>
                     </connections>
                 </viewController>
